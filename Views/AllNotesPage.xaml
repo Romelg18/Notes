@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:Notes.ViewModels"
              x:Class="Notes.Views.AllNotesPage"
-             Title="Your Notes"
+             Title="Notas Romel Gualoto"
              NavigatedTo="ContentPage_NavigatedTo">
     <ContentPage.BindingContext>
         <viewModels:NotesViewModel />
@@ -10,7 +10,7 @@
 
     <!-- Add an item to the toolbar -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding NewCommand}" IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}" />
+        <ToolbarItem Text="Añadir" Command="{Binding NewCommand}" IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}" />
     </ContentPage.ToolbarItems>
 
     <!-- Display notes in a list -->
@@ -30,7 +30,7 @@
             <DataTemplate>
                 <StackLayout>
                     <Label Text="{Binding Text}" FontSize="22"/>
-                    <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
+                    <Label Text="{Binding Date}" FontSize="14" TextColor="Blue"/>
                 </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
